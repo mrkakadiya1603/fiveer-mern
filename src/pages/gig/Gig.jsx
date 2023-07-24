@@ -1,9 +1,7 @@
 import React from 'react'
 
-const Gig = () => {
+export const Gig = () => {
   return (
     <div>Gig</div>
   )
 }
-
-export default Gig
