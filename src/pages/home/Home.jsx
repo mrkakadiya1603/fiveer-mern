@@ -6,8 +6,9 @@ import CatCard from "../../components/catCard/catCard";
 import { cards, projects } from "../../data";
 import "./Home.scss";
 import video from "./video.mp4";
+import ProjectCard from "../../components/projectCard/ProjectCard";
 
-export const Home = () => {
+ const Home = () => {
   return (
     <div className="home">
       <Featured />
@@ -78,9 +79,10 @@ export const Home = () => {
       </div>
       <Slide slidesToShow={5} arrowsScroll={5}>
         {projects.map((card) => (
-          <CatCard key={card.id} card={card} />
+          <ProjectCard key={card.id} card={card} />
         ))}
       </Slide>
     </div>
   );
 };
+export default Home
